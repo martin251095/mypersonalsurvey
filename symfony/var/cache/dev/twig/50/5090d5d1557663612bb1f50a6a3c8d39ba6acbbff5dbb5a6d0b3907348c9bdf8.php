@@ -93,6 +93,6 @@ class __TwigTemplate_8c0a938d8a14bbf956c6788d7a500df5b4f88050f0795930fa1764ee423
         return new Source("{% block title %}Homepage{% endblock %}
 
 {% extends 'site/base.html.twig' %}
-", "site/home.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/site/home.html.twig");
+", "site/home.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/site/home.html.twig");
     }
 }

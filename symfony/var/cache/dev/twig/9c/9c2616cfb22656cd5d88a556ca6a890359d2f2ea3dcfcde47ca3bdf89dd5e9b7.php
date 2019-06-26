@@ -190,6 +190,6 @@ class __TwigTemplate_967bde26c06cf70b7309c01a5e845a1972b2349b0a5cf189149ee5ec6fc
     </div>
 
 {% endblock %}
-", "site/quiz/list.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/site/quiz/list.html.twig");
+", "site/quiz/list.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/site/quiz/list.html.twig");
     }
 }

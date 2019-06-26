@@ -198,6 +198,6 @@ class __TwigTemplate_b78c052f3f69c0464a8684b1b7941be0d2bc1b5f11afb83a23123ff2687
         </div>
     </div>
 {% endblock %}
-", "site/question/_collection.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/site/question/_collection.html.twig");
+", "site/question/_collection.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/site/question/_collection.html.twig");
     }
 }
