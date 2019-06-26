@@ -62,22 +62,22 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
 ";
         // line 17
         $this->displayBlock('nav', $context, $blocks);
-        // line 64
+        // line 67
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 64, $this->source); })()), "flashes", [], "any", false, false, false, 64));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 67, $this->source); })()), "flashes", [], "any", false, false, false, 67));
         foreach ($context['_seq'] as $context["label"] => $context["messages"]) {
-            // line 65
+            // line 68
             echo "    <div class=\"container\">
         <div class=\"alert alert-";
-            // line 66
+            // line 69
             echo twig_escape_filter($this->env, $context["label"], "html", null, true);
             echo "\">
             ";
-            // line 67
+            // line 70
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($context["messages"]);
             foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-                // line 68
+                // line 71
                 echo "                <p>";
                 echo $context["message"];
                 echo "</p>
@@ -86,7 +86,7 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 70
+            // line 73
             echo "        </div>
     </div>
 ";
@@ -94,14 +94,14 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['label'], $context['messages'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 73
+        // line 76
         echo "
 ";
-        // line 74
+        // line 77
         $this->displayBlock('body', $context, $blocks);
-        // line 75
+        // line 78
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 76
+        // line 79
         echo "</body>
 </html>
 ";
@@ -228,22 +228,28 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_quiz_list");
         echo "\">Manage quizzes</a>
                 </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"";
+        // line 48
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_quiz_list");
+        echo "\">Manage quizzes</a>
+                </li>
             </ul>
             <ul class=\"navbar-nav ml-auto\">
                 ";
-        // line 49
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49)) {
-            // line 50
+        // line 52
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 52, $this->source); })()), "user", [], "any", false, false, false, 52)) {
+            // line 53
             echo "                    <li class=\"nav-item dropdown\">
                         <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\"
                            id=\"accountDropdownLink\">";
-            // line 52
+            // line 55
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("account.text"), "html", null, true);
             echo "</a>
                         <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"accountDropdownLink\">
                             <a href=\"/logout\" class=\"dropdown-item\">Log out</a>
                             <a href=\"";
-            // line 55
+            // line 58
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("survey_create");
             echo "\" class=\"dropdown-item\">Create a Survey</a>
                             <a href=\"\" class=\"dropdown-item\">Create a Quiz</a>
@@ -251,7 +257,7 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
                     </li>
                 ";
         }
-        // line 60
+        // line 63
         echo "            </ul>
         </div>
     </nav>
@@ -264,7 +270,7 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
 
     }
 
-    // line 74
+    // line 77
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -282,7 +288,7 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
 
     }
 
-    // line 75
+    // line 78
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -312,7 +318,7 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
 
     public function getDebugInfo()
     {
-        return array (  286 => 75,  268 => 74,  255 => 60,  247 => 55,  241 => 52,  237 => 50,  235 => 49,  228 => 45,  222 => 42,  216 => 39,  210 => 36,  204 => 33,  198 => 30,  192 => 27,  181 => 19,  178 => 18,  168 => 17,  156 => 13,  151 => 11,  145 => 7,  135 => 6,  117 => 5,  105 => 76,  103 => 75,  101 => 74,  98 => 73,  90 => 70,  81 => 68,  77 => 67,  73 => 66,  70 => 65,  66 => 64,  64 => 17,  60 => 15,  58 => 6,  54 => 5,  48 => 1,);
+        return array (  292 => 78,  274 => 77,  261 => 63,  253 => 58,  247 => 55,  243 => 53,  241 => 52,  234 => 48,  228 => 45,  222 => 42,  216 => 39,  210 => 36,  204 => 33,  198 => 30,  192 => 27,  181 => 19,  178 => 18,  168 => 17,  156 => 13,  151 => 11,  145 => 7,  135 => 6,  117 => 5,  105 => 79,  103 => 78,  101 => 77,  98 => 76,  90 => 73,  81 => 71,  77 => 70,  73 => 69,  70 => 68,  66 => 67,  64 => 17,  60 => 15,  58 => 6,  54 => 5,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -363,6 +369,9 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"{{ path('admin_quiz_list') }}\">Manage quizzes</a>
                 </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"{{ path('admin_quiz_list') }}\">Manage quizzes</a>
+                </li>
             </ul>
             <ul class=\"navbar-nav ml-auto\">
                 {% if app.user %}
@@ -394,6 +403,6 @@ class __TwigTemplate_35ab2b8526de264f4fc5d8bb362009f88bb54e724404adbdccac59dffb6
 {% block javascripts %}{% endblock %}
 </body>
 </html>
-", "admin/base.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/base.html.twig");
+", "admin/base.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/base.html.twig");
     }
 }

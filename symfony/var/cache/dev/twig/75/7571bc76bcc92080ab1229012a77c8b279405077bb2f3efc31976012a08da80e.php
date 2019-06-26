@@ -144,7 +144,7 @@ class __TwigTemplate_15731f0d33135d8f660d6f520d7a063a89ad2ece263a14510eb1f607685
                                     class=\"fas fa-trash\"></i></a>
                         <a href=\"";
             // line 33
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("survey_show", ["slug" => twig_get_attribute($this->env, $this->source, $context["survey"], "slug", [], "any", false, false, false, 33), "_locale" => twig_get_attribute($this->env, $this->source, $context["survey"], "sendingEmailLanguage", [], "any", false, false, false, 33)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("survey_show", ["slug" => twig_get_attribute($this->env, $this->source, $context["survey"], "slug", [], "any", false, false, false, 33)]), "html", null, true);
             echo "\"
                            class=\"btn btn-warning\"><i class=\"fas fa-arrow-circle-right\"></i></a>
                     </td>
@@ -228,7 +228,7 @@ class __TwigTemplate_15731f0d33135d8f660d6f520d7a063a89ad2ece263a14510eb1f607685
                                     class=\"fas fa-edit\"></i></a>
                         <a href=\"{{ path('admin_survey_delete', {'id':survey.id}) }}\" onclick=\"{{ confirm }}\" class=\"btn btn-danger\"><i
                                     class=\"fas fa-trash\"></i></a>
-                        <a href=\"{{ path('survey_show', {'slug':survey.slug, '_locale':survey.sendingEmailLanguage}) }}\"
+                        <a href=\"{{ path('survey_show', {'slug':survey.slug}) }}\"
                            class=\"btn btn-warning\"><i class=\"fas fa-arrow-circle-right\"></i></a>
                     </td>
                 </tr>
@@ -242,6 +242,6 @@ class __TwigTemplate_15731f0d33135d8f660d6f520d7a063a89ad2ece263a14510eb1f607685
         </div>
     </div>
 {% endblock %}
-", "admin/survey/list.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/survey/list.html.twig");
+", "admin/survey/list.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/survey/list.html.twig");
     }
 }

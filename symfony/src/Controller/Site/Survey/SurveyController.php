@@ -78,6 +78,12 @@ class SurveyController extends AbstractController
         $manager->persist($question);
 
         $translationManager->saveTranslations($question);
+        foreach($question->getAnswers() as $answer){
+          $answer->setQuestionSurvey($question);
+          $manager->persist($answer);
+
+          $translationManager->saveTranslations($answer);
+        }
       }
 
       $manager->persist($survey);

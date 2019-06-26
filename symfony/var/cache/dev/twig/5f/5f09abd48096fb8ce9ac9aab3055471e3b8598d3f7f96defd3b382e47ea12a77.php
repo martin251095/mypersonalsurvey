@@ -242,6 +242,6 @@ class __TwigTemplate_f633ec80dfeeae989c0d15a581b3752f8a9df72e8559d14b862af007224
             <a href=\"{{ path('admin_question_add') }}\" class=\"btn btn-primary btn-admin\">Add question</a>
         </div>
     </div>
-{% endblock %}", "admin/question/list.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/question/list.html.twig");
+{% endblock %}", "admin/question/list.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/question/list.html.twig");
     }
 }

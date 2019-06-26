@@ -87,20 +87,9 @@ class __TwigTemplate_e5285dc2e36826db36dc8a0bcee32e436e8cf6ee165d909ea45844aa8f8
 
 <p>";
         // line 8
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("p4.text_1", [], "messages", twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 8, $this->source); })()), "emailLang", [], "any", false, false, false, 8)), "html", null, true);
-        echo " <a
-            href=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("admin_surveyanswer_details", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 9, $this->source); })()), "id", [], "any", false, false, false, 9)]), "html", null, true);
-        echo "\">";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("p4.text_2", [], "messages", twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 9, $this->source); })()), "emailLang", [], "any", false, false, false, 9)), "html", null, true);
-        echo "</a>
-</p>
-<p>";
-        // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("p5.text_1", [], "messages", twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 11, $this->source); })()), "emailLang", [], "any", false, false, false, 11)), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("p5.text_1", [], "messages", twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 8, $this->source); })()), "emailLang", [], "any", false, false, false, 8)), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 11, $this->source); })()), "userEmail", [], "any", false, false, false, 11), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 8, $this->source); })()), "userEmail", [], "any", false, false, false, 8), "html", null, true);
         echo "</p>
 
 
@@ -127,7 +116,7 @@ class __TwigTemplate_e5285dc2e36826db36dc8a0bcee32e436e8cf6ee165d909ea45844aa8f8
 
     public function getDebugInfo()
     {
-        return array (  101 => 11,  94 => 9,  90 => 8,  83 => 6,  77 => 5,  73 => 4,  57 => 3,  43 => 1,);
+        return array (  90 => 8,  83 => 6,  77 => 5,  73 => 4,  57 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -139,14 +128,11 @@ class __TwigTemplate_e5285dc2e36826db36dc8a0bcee32e436e8cf6ee165d909ea45844aa8f8
 <p>{{ 'p2.text_1' | trans({}, \"messages\", data.emailLang) }} {{ data.pourcent|number_format(2, '.', '') }}%</p>
 <p>{{ 'p3.text_1' | trans({}, \"messages\", data.emailLang) }} {{ data.language }}</p>
 
-<p>{{ 'p4.text_1' | trans({}, \"messages\", data.emailLang) }} <a
-            href=\"{{ url('admin_surveyanswer_details', { 'id':data.id }) }}\">{{ 'p4.text_2' | trans({}, \"messages\", data.emailLang) }}</a>
-</p>
 <p>{{ 'p5.text_1' | trans({}, \"messages\", data.emailLang) }} {{ data.userEmail }}</p>
 
 
 
 
-", "email/quiz.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/email/quiz.html.twig");
+", "email/quiz.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/email/quiz.html.twig");
     }
 }

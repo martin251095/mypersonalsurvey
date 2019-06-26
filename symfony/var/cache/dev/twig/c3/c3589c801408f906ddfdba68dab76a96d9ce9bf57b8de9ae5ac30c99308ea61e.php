@@ -154,9 +154,9 @@ class __TwigTemplate_13f05233c8bd674061fab4d2822a22934da4bce3533b62a687be6feec7f
                                     class=\"fas fa-trash\"></i></a>
                         <a href=\"";
             // line 37
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(["slug" => twig_get_attribute($this->env, $this->source, $context["quiz"], "slug", [], "any", false, false, false, 37), "_locale" => twig_get_attribute($this->env, $this->source, $context["quiz"], "sendingEmailLanguage", [], "any", false, false, false, 37)]);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("quiz_show", ["slug" => twig_get_attribute($this->env, $this->source, $context["quiz"], "slug", [], "any", false, false, false, 37)]), "html", null, true);
             echo "\"
-                           class=\"btn btn-warning\"><i class=\"fas fa-arrow-circle-right\"></i></a>
+                            class=\"btn btn-warning\"><i class=\"fas fa-arrow-circle-right\"></i></a>
                     </td>
                 </tr>
             ";
@@ -242,8 +242,8 @@ class __TwigTemplate_13f05233c8bd674061fab4d2822a22934da4bce3533b62a687be6feec7f
                                     class=\"fas fa-edit\"></i></a>
                         <a href=\"{{ path('admin_quiz_delete', {'id':quiz.id}) }}\" onclick=\"{{ confirm }}\" class=\"btn btn-danger\"><i
                                     class=\"fas fa-trash\"></i></a>
-                        <a href=\"{{ path({'slug':quiz.slug, '_locale':quiz.sendingEmailLanguage}) }}\"
-                           class=\"btn btn-warning\"><i class=\"fas fa-arrow-circle-right\"></i></a>
+                        <a href=\"{{ path('quiz_show', {'slug':quiz.slug}) }}\"
+                            class=\"btn btn-warning\"><i class=\"fas fa-arrow-circle-right\"></i></a>
                     </td>
                 </tr>
             {% endfor %}
@@ -256,6 +256,6 @@ class __TwigTemplate_13f05233c8bd674061fab4d2822a22934da4bce3533b62a687be6feec7f
         </div>
     </div>
 {% endblock %}
-", "admin/quiz/list.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/quiz/list.html.twig");
+", "admin/quiz/list.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/quiz/list.html.twig");
     }
 }

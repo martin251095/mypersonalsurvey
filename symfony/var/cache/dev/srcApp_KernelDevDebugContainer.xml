@@ -579,6 +579,13 @@
         <argument type="service" id=".service_locator.ewuGMi6.App\Controller\Site\Home\HomeController"/>
       </call>
     </service>
+    <service id="App\Controller\Site\Quiz\QuizAnswerController" class="App\Controller\Site\Quiz\QuizAnswerController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.ewuGMi6.App\Controller\Site\Quiz\QuizAnswerController"/>
+      </call>
+    </service>
     <service id="App\Controller\Site\Quiz\QuizController" class="App\Controller\Site\Quiz\QuizController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -2747,14 +2754,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -6062,6 +6061,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Site\Home\HomeController" class="App\Controller\Site\Home\HomeController" public="false" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Site\Home\HomeController" class="App\Controller\Site\Home\HomeController" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Site\Home\HomeController" class="App\Controller\Site\Home\HomeController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Site\Quiz\QuizAnswerController" class="App\Controller\Site\Quiz\QuizAnswerController" public="false" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Site\Quiz\QuizAnswerController" class="App\Controller\Site\Quiz\QuizAnswerController" public="false" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Site\Quiz\QuizAnswerController" class="App\Controller\Site\Quiz\QuizAnswerController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Site\Quiz\QuizController" class="App\Controller\Site\Quiz\QuizController" public="false" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Site\Quiz\QuizController" class="App\Controller\Site\Quiz\QuizController" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Site\Quiz\QuizController" class="App\Controller\Site\Quiz\QuizController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7006,6 +7008,12 @@
     <service id=".service_locator.ewuGMi6.App\Controller\Site\Home\HomeController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\Site\Home\HomeController"/>
       <argument>App\Controller\Site\Home\HomeController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.ewuGMi6" method="withContext"/>
+    </service>
+    <service id=".service_locator.ewuGMi6.App\Controller\Site\Quiz\QuizAnswerController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\Site\Quiz\QuizAnswerController"/>
+      <argument>App\Controller\Site\Quiz\QuizAnswerController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.ewuGMi6" method="withContext"/>
     </service>

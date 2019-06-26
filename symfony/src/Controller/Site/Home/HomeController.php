@@ -16,6 +16,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+  /**
+   * @Route("/", name="homepage")
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
+   */
+  public function redirection()
+  {
+    return $this->redirect('/en/home');
+  }
 
   /**
    * @param \App\Repository\SurveyRepository $repoSurv
@@ -23,7 +31,7 @@ class HomeController extends AbstractController
    *
    * @return \Symfony\Component\HttpFoundation\Response
    *
-   * @Route("/homepage", name="home")
+   * @Route("/home", name="home")
    */
   public function home(SurveyRepository $repoSurv, QuizRepository $repoQuiz, TranslationManager $translationManager)
   {
@@ -37,5 +45,6 @@ class HomeController extends AbstractController
       'surveys' => $surveys,
       'quizzes' => $quizzes
     ]);
+
   }
 }

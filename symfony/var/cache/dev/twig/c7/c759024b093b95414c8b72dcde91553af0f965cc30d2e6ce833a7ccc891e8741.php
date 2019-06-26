@@ -240,6 +240,6 @@ class __TwigTemplate_631c1e4bc3e9298de53cd79f6eda69ddfb40bf80be4992cd3dc4179175b
             <a href=\"{{ path('admin_answer_add') }}\" class=\"btn btn-primary btn-admin\">Add answer</a>
         </div>
     </div>
-{% endblock %}", "admin/answer/list.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/answer/list.html.twig");
+{% endblock %}", "admin/answer/list.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/answer/list.html.twig");
     }
 }

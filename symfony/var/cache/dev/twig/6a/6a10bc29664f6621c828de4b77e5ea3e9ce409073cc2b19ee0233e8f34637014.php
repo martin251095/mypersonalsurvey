@@ -306,6 +306,6 @@ class __TwigTemplate_db5ee14add5b5b46be33852b5873905cd9d46dbf6735935d0e36c10ac0c
         <button type=\"submit\" class=\"btn btn-primary\"><i class=\"fas fa-check\"></i>Create</button>
         {{ form_end(form) }}
     </div>
-{% endblock %}", "admin/category/add.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/category/add.html.twig");
+{% endblock %}", "admin/category/add.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/category/add.html.twig");
     }
 }

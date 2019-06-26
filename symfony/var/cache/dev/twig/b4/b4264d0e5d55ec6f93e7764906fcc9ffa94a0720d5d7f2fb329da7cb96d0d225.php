@@ -224,6 +224,6 @@ class __TwigTemplate_10748c27f0a20a59b8ce5f1fd475aae5b7da2cb7a084687525c1307edf6
         {{ pagination.display() }}
         {# include 'admin/partials/pagination.html.twig' with {'route':'admin_answer_list'} #}
     </div>
-{% endblock %}", "admin/surveyanswer/list.html.twig", "/Volumes/NONAME/TEI/mysurvey/symfony/templates/admin/surveyanswer/list.html.twig");
+{% endblock %}", "admin/surveyanswer/list.html.twig", "/Users/mpo/Documents/TEI/mysurvey/symfony/templates/admin/surveyanswer/list.html.twig");
     }
 }

@@ -106,13 +106,15 @@ class __TwigTemplate_26b4c922773b0115696e0a670782a79f3f1c10b44eddbdf2ee0fcbc8cd9
         echo "
                 </div>
             </div>
+        </div>
+        <div class=\"row\">
             <div class=\"col\">
                 <div class=\"alert alert-light\">
                     <h4>Questions of the survey</h4>
                     <hr>
                     ";
-        // line 25
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 25, $this->source); })()), "questionSurveys", [], "any", false, false, false, 25), 'row');
+        // line 27
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), "questionSurveys", [], "any", false, false, false, 27), 'row');
         echo "
                 </div>
             </div>
@@ -120,8 +122,8 @@ class __TwigTemplate_26b4c922773b0115696e0a670782a79f3f1c10b44eddbdf2ee0fcbc8cd9
 
         <button class=\"btn btn-primary float-right\"><i class=\"fas fa-check\"></i>Add the survey</button>
         ";
-        // line 31
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 31, $this->source); })()), 'form_end');
+        // line 33
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), 'form_end');
         echo "
     </div>
 ";
@@ -133,7 +135,7 @@ class __TwigTemplate_26b4c922773b0115696e0a670782a79f3f1c10b44eddbdf2ee0fcbc8cd9
 
     }
 
-    // line 35
+    // line 37
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -143,7 +145,7 @@ class __TwigTemplate_26b4c922773b0115696e0a670782a79f3f1c10b44eddbdf2ee0fcbc8cd9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 36
+        // line 38
         echo "    <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/js/survey.js"), "html", null, true);
         echo "\"></script>
@@ -168,7 +170,7 @@ class __TwigTemplate_26b4c922773b0115696e0a670782a79f3f1c10b44eddbdf2ee0fcbc8cd9
 
     public function getDebugInfo()
     {
-        return array (  147 => 36,  137 => 35,  124 => 31,  115 => 25,  105 => 18,  101 => 17,  97 => 16,  93 => 15,  89 => 14,  85 => 13,  77 => 8,  72 => 5,  62 => 4,  51 => 1,  49 => 3,  36 => 1,);
+        return array (  149 => 38,  139 => 37,  126 => 33,  117 => 27,  105 => 18,  101 => 17,  97 => 16,  93 => 15,  89 => 14,  85 => 13,  77 => 8,  72 => 5,  62 => 4,  51 => 1,  49 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -193,6 +195,8 @@ class __TwigTemplate_26b4c922773b0115696e0a670782a79f3f1c10b44eddbdf2ee0fcbc8cd9
                     {{ form_row(form.descriptionNl) }}
                 </div>
             </div>
+        </div>
+        <div class=\"row\">
             <div class=\"col\">
                 <div class=\"alert alert-light\">
                     <h4>Questions of the survey</h4>

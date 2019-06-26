@@ -30,7 +30,7 @@
                                     class="fas fa-edit"></i></a>
                         <a href="{{ path('admin_survey_delete', {'id':survey.id}) }}" onclick="{{ confirm }}" class="btn btn-danger"><i
                                     class="fas fa-trash"></i></a>
-                        <a href="{{ path('survey_show', {'slug':survey.slug, '_locale':survey.sendingEmailLanguage}) }}"
+                        <a href="{{ path('survey_show', {'slug':survey.slug}) }}"
                            class="btn btn-warning"><i class="fas fa-arrow-circle-right"></i></a>
                     </td>
                 </tr>

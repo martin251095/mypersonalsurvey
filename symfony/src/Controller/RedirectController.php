@@ -14,7 +14,7 @@ class RedirectController extends AbstractController
      */
     public function redirectRequest()
     {
-        return $this->redirect('/');
+        return $this->redirect('/en/home');
     }
 
     /**
@@ -23,7 +23,7 @@ class RedirectController extends AbstractController
      */
     public function redirectReset()
     {
-        return $this->redirect('/');
+        return $this->redirect('/en/home');
     }
 
     /**
